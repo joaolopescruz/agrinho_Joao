@@ -1,116 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus objetivos do ano</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Minha Página</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: auto;
+            gap: 10px;
+            padding: 20px;
+        }
+        .top-text {
+            grid-column: span 12;
+        }
+        .left-text {
+            grid-column: span 3;
+            grid-row: span 8;
+        }
+        .center {
+            grid-column: span 6;
+            text-align: center;
+        }
+        .right-text {
+            grid-column: span 3;
+            grid-row: span 10;
+        }
+        .bottom-video {
+            grid-column: span 12;
+            text-align: center;
+        }
+    </style>
 </head>
-
 <body>
-    <section class="conteudo-principal">
-        <h2 class="titulo-principal">Meus objetivos do ano<span>_</span></h2>
-        <div class="conteudo">
-            <div class="botoes">
-                <button class="botao ativo">Fazer exercícios físicos</button>
-                <button class="botao">Começar a me dedicar</button>
-                <button class="botao">Socializar mais</button>
-                <button class="botao">Cuidar da minha saúde mental</button>
-            </div>
-            <div class="abas-textos">
-                <div class="aba-conteudo ativo">
-                    <h3 class="aba-conteudo-titulo-principal">Parar de procrastinar</h3>
-                    <h4 class="aba-conteudo-titulo-secundario">entrar na academia</h4>
-                    <div class="contador">
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="dias0"></p>
-                            <p class="contador-digito-texto">dias</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="horas0"></p>
-                            <p class="contador-digito-texto">horas</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="min0"></p>
-                            <p class="contador-digito-texto">min</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="seg0"></p>
-                            <p class="contador-digito-texto">seg</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="aba-conteudo">
-                    <h3 class="aba-conteudo-titulo-principal">Procurar métodos para conseguir</h3>
-                    <h4 class="aba-conteudo-titulo-secundario">Conseguir uma motivção</h4>
-                    <div class="contador">
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="dias1"></p>
-                            <p class="contador-digito-texto">dias</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="horas1"></p>
-                            <p class="contador-digito-texto">horas</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="min1"></p>
-                            <p class="contador-digito-texto">min</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="seg1"></p>
-                            <p class="contador-digito-texto">seg</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="aba-conteudo">
-                    <h3 class="aba-conteudo-titulo-principal">Sair mais de casa</h3>
-                    <h4 class="aba-conteudo-titulo-secundario">Perder o medo de falar com desconhecidos</h4>
-                    <div class="contador">
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="dias2"></p>
-                            <p class="contador-digito-texto">dias</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="horas2"></p>
-                            <p class="contador-digito-texto">horas</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="min2"></p>
-                            <p class="contador-digito-texto">min</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="seg2"></p>
-                            <p class="contador-digito-texto">seg</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="aba-conteudo">
-                    <h3 class="aba-conteudo-titulo-principal">Ir atrás de um psicólogo</h3>
-                    <h4 class="aba-conteudo-titulo-secundario">Começar a me abrir mais mentalmente</h4>
-                    <div class="contador">
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="dias3"></p>
-                            <p class="contador-digito-texto">dias</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="horas3"></p>
-                            <p class="contador-digito-texto">horas</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="min3"></p>
-                            <p class="contador-digito-texto">min</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="seg3"></p>
-                            <p class="contador-digito-texto">seg</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="container">
+        <div class="top-text">
+            <p>Linha 1</p>
+            <p>Linha 2</p>
+            <p>Linha 3</p>
+            <p>Linha 4</p>
+            <p>Linha 5</p>
+            <p>Linha 6</p>
+            <p>Linha 7</p>
         </div>
-    </section>
-    <script src="main.js"></script>
+        <div class="left-text">
+            <p>Lateral esquerda - Linha 1</p>
+            <p>Lateral esquerda - Linha 2</p>
+            <p>Lateral esquerda - Linha 3</p>
+            <p>Lateral esquerda - Linha 4</p>
+            <p>Lateral esquerda - Linha 5</p>
+            <p>Lateral esquerda - Linha 6</p>
+            <p>Lateral esquerda - Linha 7</p>
+            <p>Lateral esquerda - Linha 8</p>
+        </div>
+        <div class="center">
+            <img src="caminho_para_sua_imagem1.jpg" alt="Imagem 1">
+            <img src="caminho_para_sua_imagem2.jpg" alt="Imagem 2">
+        </div>
+        <div class="right-text">
+            <p>Lateral direita - Linha 1</p>
+            <p>Lateral direita - Linha 2</p>
+            <p>Lateral direita - Linha 3</p>
+            <p>Lateral direita - Linha 4</p>
+            <p>Lateral direita - Linha 5</p>
+            <p>Lateral direita - Linha 6</p>
+            <p>Lateral direita - Linha 7</p>
+            <p>Lateral direita - Linha 8</p>
+            <p>Lateral direita - Linha 9</p>
+            <p>Lateral direita - Linha 10</p>
+        </div>
+        <div class="bottom-video">
+            <a href="link_para_o_seu_video">Assista ao vídeo</a>
+        </div>
+    </div>
+    <div class="container">
+        <a href="segunda_pagina.html">Ir para a segunda página</a>
+    </div>
 </body>
-
 </html>
