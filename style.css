@@ -1,38 +1,42 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.title {
-    text-align: center;
-    font-size: 32px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.content {
-    text-align: justify;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-}
-
-.video {
-    text-align: center;
-    margin-top: 20px;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site sobre o Tom Azul</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="imagem-superior.jpg" alt="Imagem Superior">
+    </header>
+    
+    <main>
+        <section class="conteudo">
+            <h2>Linhas com Tom Azul</h2>
+            <div class="linha-azul">
+                <p>Linha 1</p>
+                <p>Linha 2</p>
+                <p>Linha 3</p>
+                <p>Linha 4</p>
+                <p>Linha 5</p>
+                <p>Linha 6</p>
+                <p>Linha 7</p>
+            </div>
+        </section>
+        
+        <aside>
+            <div class="imagens-laterais">
+                <img src="imagem-lateral-esquerda.jpg" alt="Imagem Lateral Esquerda">
+                <img src="imagem-lateral-direita.jpg" alt="Imagem Lateral Direita">
+            </div>
+        </aside>
+    </main>
+    
+    <footer>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SEU_CODIGO_AQUI" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </footer>
+</body>
+</html>
