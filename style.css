@@ -1,73 +1,40 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    text-align: center;
-    padding: 20px 0;
-}
-
-header img {
-    max-width: 100%;
-    height: auto;
-}
-
-main {
-    display: flex;
-    justify-content: space-between;
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.conteudo {
-    flex: 1;
-}
-
-.conteudo h2 {
-    text-align: center;
-    color: #333;
-}
-
-.linha-azul {
-    background-color: #cceeff;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.linha-azul p {
-    text-align: center;
-    margin: 10px 0;
-}
-
-aside {
-    flex: 0 0 30%;
-}
-
-.imagens-laterais {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.imagens-laterais img {
-    max-width: 100%;
-    height: auto;
-}
-
-footer {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.video {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-}
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden; /* Para evitar que as imagens ultrapassem os limites do contêiner */
+        }
+        h1 {
+            margin-top: 0;
+        }
+        p {
+            text-align: left;
+            line-height: 1.6;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .content img {
+            max-width: 45%; /* Ajuste o tamanho das imagens conforme necessário */
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        iframe {
+            width: 100%;
+            height: 315px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 8px;
+        }
